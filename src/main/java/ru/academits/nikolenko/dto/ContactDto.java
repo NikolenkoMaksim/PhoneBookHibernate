@@ -1,20 +1,13 @@
-package ru.academits.nikolenko.model;
+package ru.academits.nikolenko.dto;
 
-public class Contact {
+public class ContactDto {
     private Long id;
+
     private String firstName;
+
     private String lastName;
+
     private String phone;
-    private boolean important;
-
-    public Contact() {
-    }
-
-    public Contact(String firstName, String lastName, String phone) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phone = phone;
-    }
 
     public Long getId() {
         return id;
@@ -46,14 +39,6 @@ public class Contact {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    public boolean isImportant() {
-        return important;
-    }
-
-    public void setImportant(boolean important) {
-        this.important = important;
     }
 
     @Override

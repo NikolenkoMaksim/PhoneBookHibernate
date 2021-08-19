@@ -25,8 +25,8 @@ public class ContactDao implements PhoneBookDao {
         contactList.add(contact);
     }
 
-    private int getNewId() {
-        return idSequence.addAndGet(1);
+    private Long getNewId() {
+        return (long) idSequence.addAndGet(1);
     }
 
     public List<Contact> getAllContacts() {

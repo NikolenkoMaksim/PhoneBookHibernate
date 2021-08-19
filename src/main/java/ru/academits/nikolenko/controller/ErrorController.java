@@ -1,4 +1,4 @@
-package ru.academits.nikolenko.phonebook;
+package ru.academits.nikolenko.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

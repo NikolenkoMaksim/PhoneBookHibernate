@@ -1,7 +1,7 @@
-package ru.academits.nikolenko.phonebook;
+package ru.academits.nikolenko.controller;
 
 import org.springframework.web.bind.annotation.RequestBody;
-import ru.academits.nikolenko.model.Contact;
+import ru.academits.nikolenko.dto.ContactDto;
 import ru.academits.nikolenko.model.ContactValidation;
 import ru.academits.nikolenko.model.DeleteResults;
 import ru.academits.nikolenko.model.Filter;
@@ -9,11 +9,11 @@ import ru.academits.nikolenko.model.Filter;
 import java.util.List;
 
 public interface PhoneBookInterface {
-    List<Contact> getAllContacts();
+    List<ContactDto> getAllContacts();
 
-    ContactValidation addContact(@RequestBody Contact contact);
+    ContactValidation addContact(@RequestBody ContactDto contactDto);
 
     DeleteResults deleteContacts(@RequestBody int[] contactsIds);
 
-    List<Contact> getFilteredContacts(@RequestBody Filter filter);
+    List<ContactDto> getFilteredContacts(@RequestBody Filter filter);
 }
