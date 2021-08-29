@@ -11,7 +11,7 @@ public interface PhoneBookService {
 
     List<Contact> getAllContacts();
 
-    DeleteResults deleteContacts(int[] contactsIds);
+    DeleteResults deleteContacts(Long[] contactsIds);
 
     List<Contact> getFilteredContacts(String filter);
 

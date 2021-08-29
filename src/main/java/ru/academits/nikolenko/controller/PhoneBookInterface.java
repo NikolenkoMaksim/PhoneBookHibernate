@@ -13,7 +13,7 @@ public interface PhoneBookInterface {
 
     ContactValidation addContact(@RequestBody ContactDto contactDto);
 
-    DeleteResults deleteContacts(@RequestBody int[] contactsIds);
+    DeleteResults deleteContacts(@RequestBody Long[] contactsIds);
 
     List<ContactDto> getFilteredContacts(@RequestBody Filter filter);
 }

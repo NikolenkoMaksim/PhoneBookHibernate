@@ -24,6 +24,7 @@ public class DeleteContactScheduler {
     @Scheduled(fixedDelay = delay, initialDelay = delay)
     public void deleteAnyContact() {
         logger.info("Called scheduled function deleteAnyContact is called in DeleteContactScheduler");
+
         contactService.deleteAnyContact();
     }
 }

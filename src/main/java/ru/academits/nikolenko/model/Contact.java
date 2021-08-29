@@ -1,11 +1,29 @@
 package ru.academits.nikolenko.model;
 
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Table(name = "contact")
 public class Contact {
+    @Id
+    @GeneratedValue
     private Long id;
+
+    @OneToMany(mappedBy = "contact")
+    private List<ContactPhone> contactPhoneList;
+
+    @Column
     private String firstName;
+
+    @Column
     private String lastName;
+
+    @Column
     private String phone;
-    private boolean important;
+
+    @Column
+    private boolean isDeleted;
 
     public Contact() {
     }
@@ -48,12 +66,20 @@ public class Contact {
         this.phone = phone;
     }
 
-    public boolean isImportant() {
-        return important;
+    public boolean isDeleted() {
+        return isDeleted;
     }
 
-    public void setImportant(boolean important) {
-        this.important = important;
+    public void setDeleted(boolean deleted) {
+        this.isDeleted = deleted;
+    }
+
+    public List<ContactPhone> getContactPhoneList() {
+        return contactPhoneList;
+    }
+
+    public void setContactPhoneList(List<ContactPhone> contactPhoneList) {
+        this.contactPhoneList = contactPhoneList;
     }
 
     @Override

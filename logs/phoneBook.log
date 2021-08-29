@@ -1,81 +1,154 @@
-2021-08-19 21:17:58.632  INFO 11184 --- [main] r.a.n.PhoneBookSpringApplication         : Starting PhoneBookSpringApplication using Java 16.0.2 on LAPTOP-6TOUT69J with PID 11184 (C:\Documents\IdeaProjects\PhoneBookHibernate\target\classes started by kinik in C:\Documents\IdeaProjects\PhoneBookHibernate)
-2021-08-19 21:17:58.637 DEBUG 11184 --- [main] r.a.n.PhoneBookSpringApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
-2021-08-19 21:17:58.638  INFO 11184 --- [main] r.a.n.PhoneBookSpringApplication         : No active profile set, falling back to default profiles: default
-2021-08-19 21:18:01.250  INFO 11184 --- [main] r.a.n.PhoneBookSpringApplication         : Started PhoneBookSpringApplication in 3.759 seconds (JVM running for 5.262)
-2021-08-19 21:18:02.282  INFO 11184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-08-19 21:18:02.283  INFO 11184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-08-19 21:18:02.931  INFO 11184 --- [http-nio-8080-exec-5] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:18:10.053  INFO 11184 --- [http-nio-8080-exec-4] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:18:14.377  INFO 11184 --- [http-nio-8080-exec-9] r.a.n.phonebook.PhoneBookController      : Called method addContact in PhoneBookController. contact = {firstName = asd; lastName = asd; phone = asdsad}
-2021-08-19 21:18:14.378  INFO 11184 --- [http-nio-8080-exec-9] ru.academits.nikolenko.dao.ContactDao    : Contact added. Contacts count = 2
-2021-08-19 21:18:14.388  INFO 11184 --- [http-nio-8080-exec-1] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:18:17.044  INFO 11184 --- [http-nio-8080-exec-10] r.a.n.phonebook.PhoneBookController      : Called method addContact in PhoneBookController. contact = {firstName = asd; lastName = asdasd; phone = asdasd}
-2021-08-19 21:18:17.045  INFO 11184 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.ContactDao    : Contact added. Contacts count = 3
-2021-08-19 21:18:17.056  INFO 11184 --- [http-nio-8080-exec-3] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:18:22.065  INFO 11184 --- [http-nio-8080-exec-4] r.a.n.phonebook.PhoneBookController      : Called method addContact in PhoneBookController. contact = {firstName = q21e; lastName = 12e; phone = qwdwd}
-2021-08-19 21:18:22.066  INFO 11184 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Contact added. Contacts count = 4
-2021-08-19 21:18:22.072  INFO 11184 --- [http-nio-8080-exec-5] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:18:26.972  INFO 11184 --- [http-nio-8080-exec-7] r.a.n.phonebook.PhoneBookController      : Called method deleteContacts in PhoneBookController. contactsIds = [2, 3]
-2021-08-19 21:18:26.975  INFO 11184 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.ContactDao    : Delete contact with id = 2 deleted: true. Contacts count = 3
-2021-08-19 21:18:26.975  INFO 11184 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.ContactDao    : Delete contact with id = 3 deleted: true. Contacts count = 2
-2021-08-19 21:18:26.983  INFO 11184 --- [http-nio-8080-exec-8] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:18:28.448  INFO 11184 --- [http-nio-8080-exec-2] r.a.n.phonebook.PhoneBookController      : Called method deleteContacts in PhoneBookController. contactsIds = [1]
-2021-08-19 21:18:28.449  INFO 11184 --- [http-nio-8080-exec-2] ru.academits.nikolenko.dao.ContactDao    : Delete contact with id = 1 deleted: true. Contacts count = 1
-2021-08-19 21:18:28.454  INFO 11184 --- [http-nio-8080-exec-9] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:18:31.690  INFO 11184 --- [http-nio-8080-exec-1] r.a.n.phonebook.PhoneBookController      : Called method addContact in PhoneBookController. contact = {firstName = asd; lastName = asd; phone = dasd}
-2021-08-19 21:18:31.691  INFO 11184 --- [http-nio-8080-exec-1] ru.academits.nikolenko.dao.ContactDao    : Contact added. Contacts count = 2
-2021-08-19 21:18:31.698  INFO 11184 --- [http-nio-8080-exec-10] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:18:35.417  INFO 11184 --- [http-nio-8080-exec-4] r.a.n.phonebook.PhoneBookController      : Called method addContact in PhoneBookController. contact = {firstName = asd; lastName = qwd; phone = 12e}
-2021-08-19 21:18:35.418  INFO 11184 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Contact added. Contacts count = 3
-2021-08-19 21:18:35.425  INFO 11184 --- [http-nio-8080-exec-5] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:18:38.584  INFO 11184 --- [http-nio-8080-exec-6] r.a.n.phonebook.PhoneBookController      : Called method addContact in PhoneBookController. contact = {firstName = sda; lastName = asd; phone = 12e21e}
-2021-08-19 21:18:38.585  INFO 11184 --- [http-nio-8080-exec-6] ru.academits.nikolenko.dao.ContactDao    : Contact added. Contacts count = 4
-2021-08-19 21:18:38.592  INFO 11184 --- [http-nio-8080-exec-7] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:18:53.822  INFO 11184 --- [http-nio-8080-exec-4] r.a.n.phonebook.PhoneBookController      : Called method getFilteredContacts in PhoneBookController. filter = 1
-2021-08-19 21:18:53.822  INFO 11184 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Find filtered contacts count = 3
-2021-08-19 21:18:55.303  INFO 11184 --- [http-nio-8080-exec-5] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:19:01.142  INFO 11184 --- [http-nio-8080-exec-6] r.a.n.phonebook.PhoneBookController      : Called method deleteContacts in PhoneBookController. contactsIds = [7]
-2021-08-19 21:19:01.143  INFO 11184 --- [http-nio-8080-exec-6] ru.academits.nikolenko.dao.ContactDao    : Delete contact with id = 7 deleted: true. Contacts count = 3
-2021-08-19 21:19:01.151  INFO 11184 --- [http-nio-8080-exec-7] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:19:01.607  INFO 11184 --- [http-nio-8080-exec-8] r.a.n.phonebook.PhoneBookController      : Called method deleteContacts in PhoneBookController. contactsIds = [5]
-2021-08-19 21:19:01.608  INFO 11184 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.ContactDao    : Delete contact with id = 5 deleted: true. Contacts count = 2
-2021-08-19 21:19:01.615  INFO 11184 --- [http-nio-8080-exec-2] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:19:02.158  INFO 11184 --- [http-nio-8080-exec-9] r.a.n.phonebook.PhoneBookController      : Called method deleteContacts in PhoneBookController. contactsIds = [4]
-2021-08-19 21:19:02.158  INFO 11184 --- [http-nio-8080-exec-9] ru.academits.nikolenko.dao.ContactDao    : Delete contact with id = 4 deleted: true. Contacts count = 1
-2021-08-19 21:19:02.164  INFO 11184 --- [http-nio-8080-exec-1] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 21:19:02.716  INFO 11184 --- [http-nio-8080-exec-10] r.a.n.phonebook.PhoneBookController      : Called method deleteContacts in PhoneBookController. contactsIds = [6]
-2021-08-19 21:19:02.717  INFO 11184 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.ContactDao    : Delete contact with id = 6 deleted: true. Contacts count = 0
-2021-08-19 21:19:02.723  INFO 11184 --- [http-nio-8080-exec-3] r.a.n.phonebook.PhoneBookController      : Called method getAllContacts in PhoneBookController
-2021-08-19 22:58:38.648  INFO 4372 --- [main] r.a.n.PhoneBookSpringApplication         : Starting PhoneBookSpringApplication using Java 16.0.2 on LAPTOP-6TOUT69J with PID 4372 (C:\Documents\IdeaProjects\PhoneBookHibernate\target\classes started by kinik in C:\Documents\IdeaProjects\PhoneBookHibernate)
-2021-08-19 22:58:38.653 DEBUG 4372 --- [main] r.a.n.PhoneBookSpringApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
-2021-08-19 22:58:38.654  INFO 4372 --- [main] r.a.n.PhoneBookSpringApplication         : No active profile set, falling back to default profiles: default
-2021-08-19 22:58:40.486  INFO 4372 --- [main] r.a.n.PhoneBookSpringApplication         : Started PhoneBookSpringApplication in 2.453 seconds (JVM running for 3.403)
-2021-08-19 22:58:43.725  INFO 4372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-08-19 22:58:43.727  INFO 4372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-08-19 22:58:46.209  INFO 4372 --- [http-nio-8080-exec-6] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
-2021-08-19 23:06:25.017  INFO 780 --- [main] r.a.n.PhoneBookSpringApplication         : Starting PhoneBookSpringApplication using Java 16.0.2 on LAPTOP-6TOUT69J with PID 780 (C:\Documents\IdeaProjects\PhoneBookHibernate\target\classes started by kinik in C:\Documents\IdeaProjects\PhoneBookHibernate)
-2021-08-19 23:06:25.021 DEBUG 780 --- [main] r.a.n.PhoneBookSpringApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
-2021-08-19 23:06:25.021  INFO 780 --- [main] r.a.n.PhoneBookSpringApplication         : No active profile set, falling back to default profiles: default
-2021-08-19 23:06:26.396  INFO 780 --- [main] r.a.n.PhoneBookSpringApplication         : Started PhoneBookSpringApplication in 1.875 seconds (JVM running for 2.585)
-2021-08-19 23:06:28.848  INFO 780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-08-19 23:06:28.850  INFO 780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-08-19 23:06:31.059  INFO 780 --- [http-nio-8080-exec-4] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
-2021-08-19 23:06:36.595  INFO 780 --- [http-nio-8080-exec-6] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contact = {firstName = adsd; lastName = asd; phone = asdsad}
-2021-08-19 23:06:36.595  INFO 780 --- [http-nio-8080-exec-6] ru.academits.nikolenko.dao.ContactDao    : Contact added. Contacts count = 2
-2021-08-19 23:06:36.609  INFO 780 --- [http-nio-8080-exec-7] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
-2021-08-19 23:06:39.450  INFO 780 --- [http-nio-8080-exec-8] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contact = {firstName = asd; lastName = asd; phone = asdasd}
-2021-08-19 23:06:39.450  INFO 780 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.ContactDao    : Contact added. Contacts count = 3
-2021-08-19 23:06:39.460  INFO 780 --- [http-nio-8080-exec-9] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
-2021-08-19 23:06:44.309  INFO 780 --- [http-nio-8080-exec-10] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contact = {firstName = asd; lastName = 12e; phone = qd22}
-2021-08-19 23:06:44.310  INFO 780 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.ContactDao    : Contact added. Contacts count = 4
-2021-08-19 23:06:44.327  INFO 780 --- [http-nio-8080-exec-1] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
-2021-08-19 23:06:47.607  INFO 780 --- [http-nio-8080-exec-2] r.a.n.controller.PhoneBookController     : Called method getFilteredContacts in PhoneBookController. filter = 2
-2021-08-19 23:06:47.608  INFO 780 --- [http-nio-8080-exec-2] ru.academits.nikolenko.dao.ContactDao    : Find filtered contacts count = 2
-2021-08-19 23:06:49.860  INFO 780 --- [http-nio-8080-exec-3] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
-2021-08-19 23:06:54.253  INFO 780 --- [http-nio-8080-exec-4] r.a.n.controller.PhoneBookController     : Called method deleteContacts in PhoneBookController. contactsIds = [2, 4]
-2021-08-19 23:06:54.258  INFO 780 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Delete contact with id = 2 deleted: true. Contacts count = 3
-2021-08-19 23:06:54.259  INFO 780 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Delete contact with id = 4 deleted: true. Contacts count = 2
-2021-08-19 23:06:54.270  INFO 780 --- [http-nio-8080-exec-5] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
-2021-08-19 23:06:55.826  INFO 780 --- [http-nio-8080-exec-6] r.a.n.controller.PhoneBookController     : Called method deleteContacts in PhoneBookController. contactsIds = [1]
-2021-08-19 23:06:55.826  INFO 780 --- [http-nio-8080-exec-6] ru.academits.nikolenko.dao.ContactDao    : Delete contact with id = 1 deleted: true. Contacts count = 1
-2021-08-19 23:06:55.835  INFO 780 --- [http-nio-8080-exec-7] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:02:19.712  INFO 14720 --- [main] r.a.n.PhoneBookSpringApplication         : Starting PhoneBookSpringApplication using Java 16.0.2 on LAPTOP-6TOUT69J with PID 14720 (C:\Documents\IdeaProjects\PhoneBookHibernate\target\classes started by kinik in C:\Documents\IdeaProjects\PhoneBookHibernate)
+2021-08-29 14:02:19.722 DEBUG 14720 --- [main] r.a.n.PhoneBookSpringApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-29 14:02:19.723  INFO 14720 --- [main] r.a.n.PhoneBookSpringApplication         : No active profile set, falling back to default profiles: default
+2021-08-29 14:02:22.659  WARN 14720 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-08-29 14:02:24.734  WARN 14720 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-29 14:02:25.171  INFO 14720 --- [main] r.a.n.PhoneBookSpringApplication         : Started PhoneBookSpringApplication in 6.036 seconds (JVM running for 7.061)
+2021-08-29 14:02:25.883  INFO 14720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-29 14:02:25.885  INFO 14720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-29 14:02:26.265  INFO 14720 --- [http-nio-8080-exec-7] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:02:26.289  INFO 14720 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:07:52.590  INFO 14720 --- [http-nio-8080-exec-6] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:07:52.593  INFO 14720 --- [http-nio-8080-exec-6] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:07:58.435  INFO 14720 --- [http-nio-8080-exec-8] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = sdv; lastName = sdvd; phone = sdvdsv}
+2021-08-29 14:07:58.436  INFO 14720 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:07:58.444  INFO 14720 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:07:58.579  INFO 14720 --- [http-nio-8080-exec-9] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:07:58.581  INFO 14720 --- [http-nio-8080-exec-9] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:04.379  INFO 14720 --- [http-nio-8080-exec-10] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = sdv; lastName = sdvdv; phone = sdvdsvsdv}
+2021-08-29 14:08:04.381  INFO 14720 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:04.385  INFO 14720 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:08:04.407  INFO 14720 --- [http-nio-8080-exec-4] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:08:04.409  INFO 14720 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:07.414  INFO 14720 --- [http-nio-8080-exec-1] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = asc; lastName = asc; phone = ascsac}
+2021-08-29 14:08:07.416  INFO 14720 --- [http-nio-8080-exec-1] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:07.421  INFO 14720 --- [http-nio-8080-exec-1] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:08:07.452  INFO 14720 --- [http-nio-8080-exec-3] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:08:07.454  INFO 14720 --- [http-nio-8080-exec-3] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:10.160  INFO 14720 --- [http-nio-8080-exec-2] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = asc; lastName = asc; phone = ascsca}
+2021-08-29 14:08:10.161  INFO 14720 --- [http-nio-8080-exec-2] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:10.165  INFO 14720 --- [http-nio-8080-exec-2] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:08:10.196  INFO 14720 --- [http-nio-8080-exec-5] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:08:10.197  INFO 14720 --- [http-nio-8080-exec-5] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:13.124  INFO 14720 --- [http-nio-8080-exec-6] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = asc; lastName = asc; phone = ascsacsac}
+2021-08-29 14:08:13.126  INFO 14720 --- [http-nio-8080-exec-6] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:13.130  INFO 14720 --- [http-nio-8080-exec-6] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:08:13.160  INFO 14720 --- [http-nio-8080-exec-7] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:08:13.161  INFO 14720 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:14.820  INFO 14720 --- [http-nio-8080-exec-8] r.a.n.controller.PhoneBookController     : Called method deleteContacts in PhoneBookController. contactsIds = [11]
+2021-08-29 14:08:14.822  INFO 14720 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.GenericDao    : Called method getById in GenericDaoImpl
+2021-08-29 14:08:14.835  INFO 14720 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.GenericDao    : Called method update in GenericDaoImpl
+2021-08-29 14:08:14.839  INFO 14720 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.ContactDao    : Contact with id = 11was mark as deleted
+2021-08-29 14:08:14.860  INFO 14720 --- [http-nio-8080-exec-9] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:08:14.861  INFO 14720 --- [http-nio-8080-exec-9] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:18.377  INFO 14720 --- [http-nio-8080-exec-10] r.a.n.controller.PhoneBookController     : Called method deleteContacts in PhoneBookController. contactsIds = [8, 10]
+2021-08-29 14:08:18.378  INFO 14720 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.GenericDao    : Called method getById in GenericDaoImpl
+2021-08-29 14:08:18.380  INFO 14720 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.GenericDao    : Called method update in GenericDaoImpl
+2021-08-29 14:08:18.381  INFO 14720 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.ContactDao    : Contact with id = 8was mark as deleted
+2021-08-29 14:08:18.384  INFO 14720 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.GenericDao    : Called method getById in GenericDaoImpl
+2021-08-29 14:08:18.386  INFO 14720 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.GenericDao    : Called method update in GenericDaoImpl
+2021-08-29 14:08:18.387  INFO 14720 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.ContactDao    : Contact with id = 10was mark as deleted
+2021-08-29 14:08:18.401  INFO 14720 --- [http-nio-8080-exec-4] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:08:18.401  INFO 14720 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:08:34.649  INFO 14720 --- [http-nio-8080-exec-10] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:08:34.651  INFO 14720 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:56:47.769  INFO 3828 --- [main] r.a.n.PhoneBookSpringApplication         : Starting PhoneBookSpringApplication using Java 16.0.2 on LAPTOP-6TOUT69J with PID 3828 (C:\Documents\IdeaProjects\PhoneBookHibernate\target\classes started by kinik in C:\Documents\IdeaProjects\PhoneBookHibernate)
+2021-08-29 14:56:47.776 DEBUG 3828 --- [main] r.a.n.PhoneBookSpringApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-29 14:56:47.777  INFO 3828 --- [main] r.a.n.PhoneBookSpringApplication         : No active profile set, falling back to default profiles: default
+2021-08-29 14:56:51.267  WARN 3828 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-08-29 14:56:53.456  WARN 3828 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-29 14:56:54.138  INFO 3828 --- [main] r.a.n.PhoneBookSpringApplication         : Started PhoneBookSpringApplication in 7.323 seconds (JVM running for 8.864)
+2021-08-29 14:56:55.770  INFO 3828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-29 14:56:55.779  INFO 3828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-08-29 14:56:55.994  INFO 3828 --- [http-nio-8080-exec-4] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:56:56.057  INFO 3828 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:57:05.872  INFO 3828 --- [http-nio-8080-exec-6] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:57:05.876  INFO 3828 --- [http-nio-8080-exec-6] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:57:15.238  INFO 3828 --- [http-nio-8080-exec-8] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = asd; lastName = sd; phone = asd}
+2021-08-29 14:57:15.241  INFO 3828 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:57:15.252  INFO 3828 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:57:15.339  INFO 3828 --- [http-nio-8080-exec-9] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:57:15.342  INFO 3828 --- [http-nio-8080-exec-9] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:57:18.511  INFO 3828 --- [http-nio-8080-exec-2] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = asd; lastName = asd; phone = asdsa}
+2021-08-29 14:57:18.515  INFO 3828 --- [http-nio-8080-exec-2] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:57:18.523  INFO 3828 --- [http-nio-8080-exec-2] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:57:18.548  INFO 3828 --- [http-nio-8080-exec-4] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:57:18.550  INFO 3828 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:57:49.972  INFO 3828 --- [http-nio-8080-exec-3] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = asd; lastName = asd; phone = sad}
+2021-08-29 14:57:49.975  INFO 3828 --- [http-nio-8080-exec-3] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:57:49.987  INFO 3828 --- [http-nio-8080-exec-3] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:57:50.010  INFO 3828 --- [http-nio-8080-exec-6] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:57:50.012  INFO 3828 --- [http-nio-8080-exec-6] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:57:55.270  INFO 3828 --- [http-nio-8080-exec-7] r.a.n.controller.PhoneBookController     : Called method deleteContacts in PhoneBookController. contactsIds = [9, 12, 13, 14, 15]
+2021-08-29 14:57:55.273  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method getById in GenericDaoImpl
+2021-08-29 14:57:55.289  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method update in GenericDaoImpl
+2021-08-29 14:57:55.295  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.ContactDao    : Contact with id = 9 was mark as deleted
+2021-08-29 14:57:55.306  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method getById in GenericDaoImpl
+2021-08-29 14:57:55.310  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method update in GenericDaoImpl
+2021-08-29 14:57:55.310  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.ContactDao    : Contact with id = 12 was mark as deleted
+2021-08-29 14:57:55.317  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method getById in GenericDaoImpl
+2021-08-29 14:57:55.320  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method update in GenericDaoImpl
+2021-08-29 14:57:55.320  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.ContactDao    : Contact with id = 13 was mark as deleted
+2021-08-29 14:57:55.326  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method getById in GenericDaoImpl
+2021-08-29 14:57:55.329  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method update in GenericDaoImpl
+2021-08-29 14:57:55.330  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.ContactDao    : Contact with id = 14 was mark as deleted
+2021-08-29 14:57:55.337  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method getById in GenericDaoImpl
+2021-08-29 14:57:55.341  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method update in GenericDaoImpl
+2021-08-29 14:57:55.341  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.ContactDao    : Contact with id = 15 was mark as deleted
+2021-08-29 14:57:55.360  INFO 3828 --- [http-nio-8080-exec-8] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:57:55.361  INFO 3828 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:57:59.031  INFO 3828 --- [http-nio-8080-exec-10] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = asd; lastName = asd; phone = asdasd}
+2021-08-29 14:57:59.034  INFO 3828 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:57:59.040  INFO 3828 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:57:59.067  INFO 3828 --- [http-nio-8080-exec-2] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:57:59.069  INFO 3828 --- [http-nio-8080-exec-2] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:58:05.829  INFO 3828 --- [http-nio-8080-exec-5] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = asd; lastName = asd; phone = asdasds}
+2021-08-29 14:58:05.833  INFO 3828 --- [http-nio-8080-exec-5] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:58:05.844  INFO 3828 --- [http-nio-8080-exec-5] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:58:05.867  INFO 3828 --- [http-nio-8080-exec-3] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:58:05.868  INFO 3828 --- [http-nio-8080-exec-3] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:58:16.289  INFO 3828 --- [http-nio-8080-exec-7] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = фы; lastName = фыв; phone = фыв}
+2021-08-29 14:58:16.293  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:58:16.299  INFO 3828 --- [http-nio-8080-exec-7] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:58:16.324  INFO 3828 --- [http-nio-8080-exec-8] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:58:16.325  INFO 3828 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:58:17.744  INFO 3828 --- [http-nio-8080-exec-9] r.a.n.controller.PhoneBookController     : Called method getFilteredContacts in PhoneBookController. filter = ф
+2021-08-29 14:58:17.772  INFO 3828 --- [http-nio-8080-exec-9] ru.academits.nikolenko.dao.ContactDao    : Find filtered contacts count = 1
+2021-08-29 14:58:18.939  INFO 3828 --- [http-nio-8080-exec-1] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:58:18.942  INFO 3828 --- [http-nio-8080-exec-1] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:59:17.701  INFO 3828 --- [http-nio-8080-exec-2] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:59:17.705  INFO 3828 --- [http-nio-8080-exec-2] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:59:34.157  INFO 3828 --- [http-nio-8080-exec-4] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = фс; lastName = фыс; phone = фыссыф}
+2021-08-29 14:59:34.160  INFO 3828 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:59:34.168  INFO 3828 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 14:59:34.249  INFO 3828 --- [http-nio-8080-exec-5] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:59:34.252  INFO 3828 --- [http-nio-8080-exec-5] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 14:59:36.573  INFO 3828 --- [http-nio-8080-exec-3] r.a.n.controller.PhoneBookController     : Called method getFilteredContacts in PhoneBookController. filter = ф
+2021-08-29 14:59:36.581  INFO 3828 --- [http-nio-8080-exec-3] ru.academits.nikolenko.dao.ContactDao    : Find filtered contacts count = 2
+2021-08-29 14:59:45.648  INFO 3828 --- [http-nio-8080-exec-10] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 14:59:45.651  INFO 3828 --- [http-nio-8080-exec-10] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 15:00:19.942  INFO 3828 --- [http-nio-8080-exec-8] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 15:00:19.946  INFO 3828 --- [http-nio-8080-exec-8] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 15:00:28.729  INFO 3828 --- [http-nio-8080-exec-6] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 15:00:28.731  INFO 3828 --- [http-nio-8080-exec-6] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 15:00:49.368  INFO 3828 --- [http-nio-8080-exec-1] r.a.n.controller.PhoneBookController     : Called method deleteContacts in PhoneBookController. contactsIds = [17]
+2021-08-29 15:00:49.371  INFO 3828 --- [http-nio-8080-exec-1] ru.academits.nikolenko.dao.GenericDao    : Called method getById in GenericDaoImpl
+2021-08-29 15:00:49.374  INFO 3828 --- [http-nio-8080-exec-1] ru.academits.nikolenko.dao.GenericDao    : Called method update in GenericDaoImpl
+2021-08-29 15:00:49.375  INFO 3828 --- [http-nio-8080-exec-1] ru.academits.nikolenko.dao.ContactDao    : Contact with id = 17 was mark as deleted
+2021-08-29 15:00:49.446  INFO 3828 --- [http-nio-8080-exec-4] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 15:00:49.448  INFO 3828 --- [http-nio-8080-exec-4] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 15:05:31.692  INFO 1724 --- [main] r.a.n.PhoneBookSpringApplication         : Starting PhoneBookSpringApplication using Java 16.0.2 on LAPTOP-6TOUT69J with PID 1724 (C:\Documents\IdeaProjects\PhoneBookHibernate\target\classes started by kinik in C:\Documents\IdeaProjects\PhoneBookHibernate)
+2021-08-29 15:05:31.696 DEBUG 1724 --- [main] r.a.n.PhoneBookSpringApplication         : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-29 15:05:31.696  INFO 1724 --- [main] r.a.n.PhoneBookSpringApplication         : No active profile set, falling back to default profiles: default
+2021-08-29 15:05:35.189  WARN 1724 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-08-29 15:05:37.040  WARN 1724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-29 15:05:37.874  INFO 1724 --- [main] r.a.n.PhoneBookSpringApplication         : Started PhoneBookSpringApplication in 6.947 seconds (JVM running for 8.357)
+2021-08-29 15:05:39.461  INFO 1724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-29 15:05:39.466  INFO 1724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-08-29 15:05:39.605  INFO 1724 --- [http-nio-8080-exec-1] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 15:05:39.644  INFO 1724 --- [http-nio-8080-exec-1] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 15:05:46.942  INFO 1724 --- [http-nio-8080-exec-2] r.a.n.controller.PhoneBookController     : Called method addContact in PhoneBookController. contactDto = {firstName = asc; lastName = asc; phone = ascc}
+2021-08-29 15:05:46.946  INFO 1724 --- [http-nio-8080-exec-2] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl
+2021-08-29 15:05:46.960  INFO 1724 --- [http-nio-8080-exec-2] ru.academits.nikolenko.dao.GenericDao    : Called method create in GenericDaoImpl
+2021-08-29 15:05:47.047  INFO 1724 --- [http-nio-8080-exec-3] r.a.n.controller.PhoneBookController     : Called method getAllContacts in PhoneBookController
+2021-08-29 15:05:47.050  INFO 1724 --- [http-nio-8080-exec-3] ru.academits.nikolenko.dao.ContactDao    : Called method getAllContacts in ContactDaoImpl

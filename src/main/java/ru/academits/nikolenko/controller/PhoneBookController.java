@@ -23,9 +23,9 @@ import java.util.List;
 @RequestMapping("/phoneBook/rpc/api/v1")
 public class PhoneBookController implements PhoneBookInterface {
     private static final Logger logger = LoggerFactory.getLogger(PhoneBookController.class);
+
     private final ContactDtoToContactConverter contactDtoToContactConverter;
     private final ContactToContactDtoConverter contactToContactDtoConverter;
-
     private final PhoneBookService contactService;
 
     public PhoneBookController(ContactDtoToContactConverter contactDtoToContactConverter, ContactToContactDtoConverter contactToContactDtoConverter, ContactService contactService) {
@@ -50,7 +50,7 @@ public class PhoneBookController implements PhoneBookInterface {
 
     @RequestMapping(value = "deleteContacts", method = RequestMethod.POST)
     @ResponseBody
-    public DeleteResults deleteContacts(@RequestBody int[] contactsIds) {
+    public DeleteResults deleteContacts(@RequestBody Long[] contactsIds) {
         logger.info("Called method deleteContacts in PhoneBookController. contactsIds = " + Arrays.toString(contactsIds));
         return contactService.deleteContacts(contactsIds);
     }

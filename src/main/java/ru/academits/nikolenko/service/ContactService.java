@@ -2,7 +2,6 @@ package ru.academits.nikolenko.service;
 
 import org.springframework.stereotype.Service;
 import ru.academits.nikolenko.dao.ContactDao;
-import ru.academits.nikolenko.dao.PhoneBookDao;
 import ru.academits.nikolenko.model.Contact;
 import ru.academits.nikolenko.model.ContactValidation;
 import ru.academits.nikolenko.model.DeleteResults;
@@ -11,7 +10,7 @@ import java.util.List;
 
 @Service
 public class ContactService implements PhoneBookService {
-    private final PhoneBookDao contactDao;
+    private final ContactDao contactDao;
 
     public ContactService(ContactDao contactDao) {
         this.contactDao = contactDao;
@@ -65,7 +64,7 @@ public class ContactService implements PhoneBookService {
         ContactValidation contactValidation = validateContact(contact);
 
         if (contactValidation.isValid()) {
-            contactDao.add(contact);
+            contactDao.create(contact);
         }
 
         return contactValidation;
@@ -75,7 +74,7 @@ public class ContactService implements PhoneBookService {
         return contactDao.getAllContacts();
     }
 
-    public DeleteResults deleteContacts(int[] contactsIds) {
+    public DeleteResults deleteContacts(Long[] contactsIds) {
         if (contactsIds == null) {
             return new DeleteResults(false, "Не найдем массив с id контактов");
         }
@@ -89,8 +88,10 @@ public class ContactService implements PhoneBookService {
 
         boolean deletedAll = true;
 
-        for (int contactId : contactsIds) {
-            if (!contactDao.deleteContact(contactId)) {
+        for (Long contactId : contactsIds) {
+            try {
+                contactDao.deleteById(contactId);
+            } catch (Exception e) {
                 deletedAll = false;
                 error.append(contactId).append(", ");
             }
@@ -103,8 +104,9 @@ public class ContactService implements PhoneBookService {
         return new DeleteResults(false, error.delete(error.length() - 2, error.length()).toString());
     }
 
+
     public List<Contact> getFilteredContacts(String filter) {
-        return contactDao.getFilteredContacts(filter);
+        return contactDao.findContactContainingString(filter);
     }
 
     public void deleteAnyContact() {
